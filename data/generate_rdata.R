@@ -159,6 +159,19 @@ suma_terrenos_municipio_16 <- ddply (df_ac_16,
 colnames(suma_terrenos_municipio_07) <- c("Municipio", "Terrenos")
 colnames(suma_terrenos_municipio_16) <- c("Municipio", "Terrenos")
 
+area_promedio_municipio_07 <- ddply (df_ac_07, 
+                                     "NOM_MUN", 
+                                     summarise, y = mean(as.numeric(SUP_SEMB_07)))
+area_promedio_municipio_16 <- ddply (df_ac_16, 
+                                     "NOM_MUN", 
+                                     summarise, y = mean(as.numeric(SUP_SEMB_16)))
+
+colnames(area_promedio_municipio_07) <- c("Municipio", "Superficie promedio sembrada")
+colnames(area_promedio_municipio_16) <- c("Municipio", "Superficie promedio sembrada")
+
+resumen_07 <- cbind(suma_terrenos_municipio_07, area_promedio_municipio_07$`Superficie promedio sembrada`)
+resumen_16 <- cbind(suma_terrenos_municipio_16, area_promedio_municipio_16$`Superficie promedio sembrada`)
+
 
 ########### CONTROL
 # CORRELACIÓN DE DATOS
@@ -184,7 +197,8 @@ save(concentrado07, concentrado16, file = "concentrados.RData")
 save(comparado_ac, comparado_esp, casos_comparables_ac, casos_comparables_esp, sum_comparables_ac, sum_comparables_esp, file = "comparados.RData")
 save(df_correlacion, df_correlacion_mc, matriz_correlacion, df_correlacion_pearson, df_correlacion_pearson_melt, 
      df_correlacion_spearman, df_correlacion_spearman_melt, file = "correlaciones.RData")
-save(suma_terrenos_municipio_07, suma_terrenos_municipio_16, file = "exploracion.RData")
+save(suma_terrenos_municipio_07, suma_terrenos_municipio_16, area_promedio_municipio_07, area_promedio_municipio_16, 
+     file = "exploracion.RData")
 save(autocorr, autocorr_ac, file = "autocorrelaciones.RData")
 save(cambios_usv, cambios_usv_ac, file = "cambios.RData")
 

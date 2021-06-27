@@ -99,7 +99,7 @@ function(input, output, session) {
   
   
   output$tabla6 = DT::renderDataTable({
-    data <- suma_terrenos_municipio_07
+    data <- resumen_07
     DT::datatable(
       extensions = 'Buttons',
       options = list(
@@ -119,7 +119,7 @@ function(input, output, session) {
   })
   
   output$tabla6 <- DT::renderDataTable(
-    DT::datatable(suma_terrenos_municipio_07, options = list(paging = FALSE))
+    DT::datatable(resumen_07, options = list(paging = FALSE))
   )
   
   # VISUALIZAR CORRELACIONES
