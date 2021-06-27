@@ -198,6 +198,7 @@ save(comparado_ac, comparado_esp, casos_comparables_ac, casos_comparables_esp, s
 save(df_correlacion, df_correlacion_mc, matriz_correlacion, df_correlacion_pearson, df_correlacion_pearson_melt, 
      df_correlacion_spearman, df_correlacion_spearman_melt, file = "correlaciones.RData")
 save(suma_terrenos_municipio_07, suma_terrenos_municipio_16, area_promedio_municipio_07, area_promedio_municipio_16, 
+     resumen_07, resumen_16,
      file = "exploracion.RData")
 save(autocorr, autocorr_ac, file = "autocorrelaciones.RData")
 save(cambios_usv, cambios_usv_ac, file = "cambios.RData")
