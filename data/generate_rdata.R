@@ -176,7 +176,7 @@ df_correlacion_spearman <- as.data.frame(round(cor(matriz_correlacion, method = 
 df_correlacion_spearman_melt <- melt(cor(matriz_correlacion, method = "spearman"))
 
 # CREAR ARCHIVOS TIPO RData PARA ALMACENAR LOS RESULTADOS DEL PROCESAMIENTO DE LOS DATOS
-setwd("/media/iskar/archivosB/PROYECTOS/PROYECTO_ESP_CENTROGEO_3.0/mapa_agricultura_masaforestal/data/Rdata/")
+setwd("/media/iskar/archivos/MAPAS/mapasR/mapa_agricultura_masaforestal/data/Rdata/")
 
 save(ac_mapa, ac_mapa_b, ac_mapa_mc, serie_3, serie_6, file = "carto.RData")
 save(df_ac_16, df_ac_07, file = "datos.RData")
@@ -189,7 +189,7 @@ save(autocorr, autocorr_ac, file = "autocorrelaciones.RData")
 save(cambios_usv, cambios_usv_ac, file = "cambios.RData")
 
 # REGRESAR AL ENTORNO GENERAL LOCAL
-setwd("/media/iskar/archivosB/PROYECTOS/PROYECTO_ESP_CENTROGEO_3.0/mapa_agricultura_masaforestal")
+setwd("/media/iskar/archivos/MAPAS/mapasR/mapa_agricultura_masaforestal")
 
 ggcorrplot(df_correlacion_pearson,
            hc.order = TRUE,
