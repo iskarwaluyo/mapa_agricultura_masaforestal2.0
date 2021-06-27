@@ -1,0 +1,42 @@
+file format : IDRISI Raster A.1
+file title  : 
+data type   : byte
+file type   : binary
+columns     : 1435
+rows        : 1482
+ref. system : plane
+ref. units  : meters
+unit dist.  : 1.
+min. X      : 718105.363108
+max. X      : 761155.363108
+min. Y      : 1778228.286024
+max. Y      : 1822688.286024
+pos'n error : unknown
+resolution  : unknown
+min. value  : 1.
+max. value  : 255.
+display min : 1.
+display max : 255.
+value unit  : unknown
+value error : unknown
+flag value  : unknown
+flag def'n  : unknown
+legend cats : 0
+lineage     : This file was created by the ErdIdris module with the command line: 5*D:\diseño_proyectos\shp_finales\serie_6.img*D:\diseño_proyectos\shp_finales\serie6.rst
+comment     : Source File Contains the Following Additional Information: 
+comment     : The datum name: WGS 84
+comment     : The datum type: EPRJ_DATUM_PARAMETRIC
+comment     : Parameter 1: 0.00000
+comment     : Parameter 2: 0.00000
+comment     : Parameter 3: 0.00000
+comment     : Parameter 4: 1.00000
+comment     : Parameter 5: 0.00000
+comment     : Parameter 6: 0.00000
+comment     : Parameter 7: 0.00000
+comment     : The name of the spheroid/ellipsoid: WGS_1984
+comment     : The major-semi axis of the ellipsoid in meters: 6378137.000
+comment     : The minor-semi axis of the ellipsoid in meters: 6356752.314
+comment     : The eccentricity of the ellipsoid, squared: 0.006694
+comment     : The radius of the spheroid in meters: 6378137.000
+comment     : ProType: UTM North
+comment     : The zone number for internal State Plane or UTM projections: 15
