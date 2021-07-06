@@ -18,9 +18,6 @@ function(input, output, session) {
         if (input$NOM_MUN_07 != "Todos") {
           data <- data[data$NOM_MUN_07 == input$NOM_MUN_07,]
         }
-        if (input$CVE_CONCAT_07 != "Todos") {
-          data <- data[data$CVE_CONCAT_07 == input$CVE_CONCAT_07,]
-        }
         data
       }
     )
@@ -41,9 +38,6 @@ function(input, output, session) {
         }
         if (input$NOM_MUN_16 != "Todos") {
           data <- data[data$NOM_MUN_16 == input$NOM_MUN_16,]
-        }
-        if (input$CVE_CONCAT_16 != "Todos") {
-          data <- data[data$CVE_CONCAT_16 == input$CVE_CONCAT_16,]
         }
         data
       }
@@ -78,9 +72,6 @@ function(input, output, session) {
         buttons = c('csv')
       ),
       {
-        if (input$CVE_CONCAT != "Todos") {
-          data <- data[data$CVE_CONCAT == input$CVE_CONCAT,]
-        }
         if (input$NOM_MUN != "Todos") {
           data <- data[data$NOM_MUN == input$NOM_MUN,]
         }
@@ -107,9 +98,6 @@ function(input, output, session) {
         buttons = c('csv')
       ),
       {
-        if (input$CVE_CONCAT != "Todos") {
-          data <- data[data$CVE_CONCAT == input$CVE_CONCAT,]
-        }
         if (input$NOM_MUN != "Todos") {
           data <- data[data$NOM_MUN == input$NOM_MUN,]
         }

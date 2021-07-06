@@ -40,12 +40,6 @@ bootstrapPage(theme = shinytheme("flatly"),
                                                                   "Municipio:",
                                                                   c("Todos",
                                                                     unique(as.character(concentrado07$NOM_MUN_07))))
-                                               ),
-                                               column(4,
-                                                      selectInput("CVE_CONCAT_07",
-                                                                  "Clave concatenado/Área de Control:",
-                                                                  c("Todos",
-                                                                    unique(as.character(concentrado07$CVE_CONCAT_07))))
                                                )
                                              ),
                                              DT::dataTableOutput("tabla1"),
@@ -65,12 +59,6 @@ bootstrapPage(theme = shinytheme("flatly"),
                                                                   "Municipio:",
                                                                   c("Todos",
                                                                     unique(as.character(concentrado16$NOM_MUN_16))))
-                                               ),
-                                               column(4,
-                                                      selectInput("CVE_CONCAT_16",
-                                                                  "Clave concatenado/Área de Control:",
-                                                                  c("Todos",
-                                                                    unique(as.character(concentrado16$CVE_CONCAT_16))))
                                                )
                                              ),
                                              DT::dataTableOutput("tabla2"),
@@ -93,12 +81,6 @@ bootstrapPage(theme = shinytheme("flatly"),
                                              h2("Cambios por área de control"),
                                              ("NOTA: Datos completos solo para el Municipio Marqués de Comillas."),
                                              fluidRow(
-                                               column(4,
-                                                      selectInput("CVE_CONCAT",
-                                                                  "Clave de área de control:",
-                                                                  c("Todos",
-                                                                    unique(as.character(df_correlacion$CVE_CONCAT))))
-                                               ),
                                                column(4,
                                                       selectInput("NOM_MUN",
                                                                   "Municipio:",
